@@ -1,0 +1,36 @@
+love-project/
+│
+├── index.html
+├── quiz.html
+├── login.html
+├── main.html
+├── menu.html
+│
+├── assets/
+│   ├── images/
+│   ├── audio/
+│   ├── fonts/
+│
+├── css/
+│   ├── base.css
+│   ├── animations.css
+│   ├── pages/
+│   │   ├── heart.css
+│   │   ├── quiz.css
+│   │   ├── main.css
+│   │   ├── menu.css
+│
+├── js/
+│   ├── core/
+│   │   ├── state.js
+│   │   ├── navigation.js
+│   │   └── storage.js
+│   │
+│   ├── pages/
+│   │   ├── heart.js
+│   │   ├── quiz.js
+│   │   ├── login.js
+│   │   ├── main.js
+│   │   └── menu.js
+│
+└── README.md

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/login.css" />
+</head>
+<body>
+  <main id="login-page" class="page page-login">
+    <section class="login-wrapper">
+      <header class="login-header">
+        <h1 class="login-title">Just One Last Step</h1>
+        <p class="login-instruction">
+          This is only for you. Take a breath, then continue.
+        </p>
+      </header>
+
+      <section class="login-content">
+        <form id="login-form" class="login-form">
+          <div class="input-group">
+            <label for="login-username">Your name</label>
+            <input
+              type="text"
+              id="login-username"
+              name="username"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="login-password">Secret phrase</label>
+            <input
+              type="password"
+              id="login-password"
+              name="password"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="login-actions">
+            <button type="submit" id="login-submit" class="login-submit">
+              Enter
+            </button>
+          </div>
+
+          <div id="login-feedback" class="login-feedback"></div>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <script src="js/core/storage.js"></script>
+  <script src="js/core/navigation.js"></script>
+  <script src="js/pages/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+/* Menu Page Base */
+.page-menu {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Background image */
+.page-menu::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("../../assets/images/background/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+/* Soft overlay */
+.page-menu::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+}
+
+/* Wrapper */
+.menu-wrapper {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 3.5rem 1.6rem 4.5rem;
+}
+
+/* Header */
+.menu-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.menu-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+
+.menu-intro {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* Menu list */
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+/* Menu item */
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* Button */
+.menu-button {
+  width: 100%;
+  text-align: left;
+  padding: 0.9rem 1.2rem;
+  border-radius: 14px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Placeholder section */
+.menu-section {
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+/* Footer spacing */
+.menu-footer {
+  margin-top: 3rem;
+  height: 1px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .menu-wrapper {
+    padding: 2.5rem 1.2rem 3.5rem;
+  }
+
+  .menu-title {
+    font-size: 1.6rem;
+  }
+
+  .menu-button {
+    font-size: 0.95rem;
+    padding: 0.85rem 1.1rem;
+  }
+}

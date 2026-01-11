@@ -1,0 +1,75 @@
+/* Heart Interaction Page */
+
+.page-heart {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Background image layer */
+.page-heart::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("../../assets/images/background/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+/* Soft overlay for readability */
+.page-heart::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.55);
+  z-index: -1;
+}
+
+/* Centered content wrapper */
+.center-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Prompt text */
+.prompt h1 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+  opacity: 0.85;
+}
+
+/* Heart container */
+.heart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Heart image (image element, not background) */
+.heart {
+  width: min(280px, 60vw);
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Progress text */
+.progress p {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  min-height: 1.2em;
+}

@@ -1,0 +1,96 @@
+/* Main Page Base */
+.page-main {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+/* Background image */
+.page-main::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("../../assets/images/background/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+/* Soft overlay for readability */
+.page-main::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.65);
+  z-index: -1;
+}
+
+/* Letter container */
+.letter-wrapper {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3.5rem 1.8rem 4.5rem;
+}
+
+/* Header */
+.letter-header {
+  margin-bottom: 2.2rem;
+  text-align: left;
+}
+
+.letter-title {
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* Letter body */
+.letter-content {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.letter-paragraph {
+  margin-bottom: 1.6rem;
+}
+
+/* Navigation */
+.letter-navigation {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3rem;
+}
+
+.letter-continue {
+  padding: 0.7rem 2.2rem;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+/* Footer spacing */
+.letter-footer {
+  margin-top: 2rem;
+  height: 1px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .letter-wrapper {
+    padding: 2.5rem 1.3rem 3.5rem;
+  }
+
+  .letter-title {
+    font-size: 1.5rem;
+  }
+
+  .letter-content {
+    font-size: 0.95rem;
+  }
+}

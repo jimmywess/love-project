@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu</title>
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/menu.css" />
+</head>
+<body>
+  <main id="menu-page" class="page page-menu">
+    <section class="menu-wrapper">
+      <header class="menu-header">
+        <h1 class="menu-title">Our Little World</h1>
+        <p class="menu-intro">
+          Take your time. Each path holds a small piece of us.
+        </p>
+      </header>
+
+      <nav class="menu-content" aria-label="Memory menu">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <button
+              id="menu-letters"
+              class="menu-button"
+              data-section="letters"
+              type="button"
+            >
+              Handwritten Letters
+            </button>
+            <section
+              class="menu-section"
+              data-section-content="letters"
+              hidden
+            ></section>
+          </li>
+
+          <li class="menu-item">
+            <button
+              id="menu-gallery"
+              class="menu-button"
+              data-section="gallery"
+              type="button"
+            >
+              Photo Gallery
+            </button>
+            <section
+              class="menu-section"
+              data-section-content="gallery"
+              hidden
+            ></section>
+          </li>
+
+          <li class="menu-item">
+            <button
+              id="menu-contact"
+              class="menu-button"
+              data-section="contact"
+              type="button"
+            >
+              My Contact Information
+            </button>
+            <section
+              class="menu-section"
+              data-section-content="contact"
+              hidden
+            ></section>
+          </li>
+
+          <li class="menu-item">
+            <button
+              id="menu-future"
+              class="menu-button"
+              data-section="future"
+              type="button"
+            >
+              Future Notes
+            </button>
+            <section
+              class="menu-section"
+              data-section-content="future"
+              hidden
+            ></section>
+          </li>
+        </ul>
+      </nav>
+
+      <footer class="menu-footer"></footer>
+    </section>
+  </main>
+
+  <script src="js/core/storage.js"></script>
+  <script src="js/core/navigation.js"></script>
+  <script src="js/pages/menu.js"></script>
+</body>
+</html>

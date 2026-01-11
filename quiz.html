@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz</title>
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/quiz.css" />
+</head>
+<body>
+  <main id="quiz-page" class="page page-quiz">
+    <section class="quiz-wrapper">
+      <header class="quiz-header">
+        <h1 class="quiz-title">Let’s see how well you know me</h1>
+        <p class="quiz-instruction">
+          Take your time. There’s no rush — just answer from the heart.
+        </p>
+      </header>
+
+      <section class="quiz-content">
+        <form id="quiz-form" class="quiz-form">
+          
+          <div class="question-block" data-question-id="1">
+            <p class="question-text">Question 1</p>
+            <div class="options">
+              <label>
+                <input type="radio" name="question-1" value="a" />
+                <span>Option A</span>
+              </label>
+              <label>
+                <input type="radio" name="question-1" value="b" />
+                <span>Option B</span>
+              </label>
+              <label>
+                <input type="radio" name="question-1" value="c" />
+                <span>Option C</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="question-block" data-question-id="2">
+            <p class="question-text">Question 2</p>
+            <div class="options">
+              <label>
+                <input type="radio" name="question-2" value="a" />
+                <span>Option A</span>
+              </label>
+              <label>
+                <input type="radio" name="question-2" value="b" />
+                <span>Option B</span>
+              </label>
+              <label>
+                <input type="radio" name="question-2" value="c" />
+                <span>Option C</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="question-block" data-question-id="3">
+            <p class="question-text">Question 3</p>
+            <div class="options">
+              <label>
+                <input type="radio" name="question-3" value="a" />
+                <span>Option A</span>
+              </label>
+              <label>
+                <input type="radio" name="question-3" value="b" />
+                <span>Option B</span>
+              </label>
+              <label>
+                <input type="radio" name="question-3" value="c" />
+                <span>Option C</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="quiz-actions">
+            <button type="submit" id="quiz-submit" class="quiz-submit">
+              Continue
+            </button>
+          </div>
+
+          <div id="quiz-feedback" class="quiz-feedback"></div>
+
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <script src="js/core/storage.js"></script>
+  <script src="js/core/navigation.js"></script>
+  <script src="js/pages/quiz.js"></script>
+</body>
+</html>
