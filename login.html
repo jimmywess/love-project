@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Last Question</title>
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/login.css" />
+
+  <!-- Elegant serif font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <main class="page page-login fade-in">
+    <section class="login-wrapper">
+
+      <!-- Riddle card -->
+      <div id="riddle-card" class="riddle-card">
+        <p id="riddle-text" class="riddle-text"></p>
+      </div>
+
+      <!-- Answer input -->
+      <form id="riddle-form" class="riddle-form" autocomplete="off">
+        <input
+          id="riddle-input"
+          type="text"
+          placeholder="Your answer"
+          required
+        />
+        <p id="riddle-hint" class="riddle-hint"></p>
+      </form>
+
+    </section>
+  </main>
+
+  <script src="js/core/navigation.js"></script>
+  <script src="js/pages/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Few Questions</title>
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/quiz.css" />
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="page page-quiz">
+
+    <section class="quiz-wrapper">
+      <div class="quiz-card">
+
+        <p id="quiz-progress" class="quiz-progress"></p>
+
+        <p id="quiz-question" class="quiz-question"></p>
+
+        <textarea
+          id="quiz-answer"
+          class="quiz-answer"
+          placeholder="You can take your time…"
+        ></textarea>
+
+        <button id="quiz-next" class="quiz-next">
+          Next
+        </button>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/core/navigation.js"></script>
+  <script src="js/pages/quiz.js"></script>
+</body>
+</html>
