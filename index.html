@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You</title>
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/heart.css" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <main class="page page-heart">
+
+    <!-- Heart is anchored separately -->
+    <div class="heart-stage">
+      <h1 class="heart-prompt">Touch it.</h1>
+
+      <div class="heart-container">
+        <div id="heart" class="heart">
+          <img src="assets/images/heart.png" alt="Heart" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Text lives outside the centering logic -->
+    <p id="heart-progress" class="heart-subtext"></p>
+
+  </main>
+
+  <script src="js/core/navigation.js"></script>
+  <script src="js/pages/heart.js"></script>
+</body>
+</html>
