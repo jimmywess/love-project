@@ -1,0 +1,92 @@
+/* ===============================
+   Quiz – Quiet Reflection
+   =============================== */
+
+.page-quiz {
+  font-family: "Cormorant Garamond", serif;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Background */
+.page-quiz::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("../../assets/images/background/Background2.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -3;
+}
+
+/* Vignette */
+.page-quiz::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255,255,255,0.6) 0%,
+    rgba(255,255,255,0.45) 45%,
+    rgba(0,0,0,0.15) 100%
+  );
+  z-index: -2;
+}
+
+/* Card */
+.quiz-wrapper {
+  width: min(90%, 720px);
+}
+
+.quiz-card {
+  padding: 2.8rem 2.4rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+/* Text */
+.quiz-progress {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.quiz-question {
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+/* Answer */
+.quiz-answer {
+  min-height: 120px;
+  padding: 1rem 1.1rem;
+  border-radius: 14px;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+/* Button */
+.quiz-next {
+  align-self: flex-end;
+  padding: 0.7rem 2.2rem;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .quiz-question {
+    font-size: 1.15rem;
+  }
+}

@@ -1,0 +1,257 @@
+/* ===============================
+   MENU PAGE
+   =============================== */
+
+.page-menu {
+  min-height: 100vh;
+  position: relative;
+}
+
+.page-menu::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("../../assets/images/background/Background5.jpg ");
+  background-size: cover;
+  background-position: center;
+  z-index: -3;
+}
+
+.page-menu::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255,255,255,0.75) 0%,
+    rgba(255,255,255,0.6) 50%,
+    rgba(0,0,0,0.2) 100%
+  );
+  z-index: -2;
+}
+
+/* Fade in */
+.fade-in {
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Wrapper */
+.menu-wrapper {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 3.5rem 1.6rem 4rem;
+}
+
+.menu-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.menu-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+
+.menu-intro {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+/* Menu */
+.menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  padding: 0;
+}
+
+.menu-button {
+  width: 100%;
+  padding: 0.95rem 1.2rem;
+  border-radius: 16px;
+  border: none;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.7);
+  cursor: pointer;
+}
+
+/* ===============================
+   GENTLE OVERLAY
+   =============================== */
+
+.gentle-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.gentle-overlay.hidden {
+  display: none;
+}
+
+/* Panel */
+.glass-panel {
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(12px);
+  border-radius: 22px;
+
+  max-width: 720px;
+  width: calc(100% - 3rem);
+
+  padding: 3.2rem 2.6rem;
+
+  animation: panelIn 0.8s ease forwards;
+}
+
+
+
+@keyframes panelIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Content */
+.gentle-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.gentle-line {
+  opacity: 0;
+  transform: translateY(6px);
+  font-size: 1rem;
+  line-height: 1.7;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.gentle-line.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===============================
+   MEMORIES – REFINED
+   =============================== */
+
+.memories-panel {
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+
+.memories-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.memory-card {
+  padding: 1.8rem 2rem;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.6);
+
+  cursor: pointer;
+
+  opacity: 0;
+  transform: translateY(10px);
+
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+
+.memory-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.memory-card h3 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+
+.memory-preview {
+  font-size: 0.92rem;
+  opacity: 0.75;
+  line-height: 1.6;
+}
+
+
+
+.memory-detail {
+  font-size: 0.95rem;
+  line-height: 1.7;
+
+  margin-top: 0.8rem;
+
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+
+  transition:
+    opacity 0.6s ease,
+    max-height 0.6s ease;
+}
+
+
+
+.memory-card.expanded .memory-detail {
+  opacity: 0.9;
+  max-height: 1000px;
+}
+
+
+/* ===============================
+   THE FUTURE
+   =============================== */
+
+.future-panel {
+  text-align: center;
+}
+
+.future-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.future-line {
+  font-size: 1rem;
+  line-height: 1.8;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.future-line.visible {
+  opacity: 0.85;
+  transform: translateY(0);
+}
+
+.future-line.spacer {
+  height: 0.8rem;
+}
+
