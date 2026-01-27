@@ -14,7 +14,7 @@
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url("../../assets/images/background/background1.jpg");
+  background-image: url("../../assets/images/background/Background1.jpg");
   background-size: cover;
   background-position: center;
   z-index: -3;
@@ -121,3 +121,4 @@
   60%  { transform: scale(1.35); }
   100% { transform: scale(0.9); opacity: 0; }
 }
+
